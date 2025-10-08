@@ -10867,6 +10867,89 @@ p.lead {
   font-size: 1.5rem;
 }
 
+/* Override uppercase for email links */
+.subheading a[href^="mailto:"] {
+  text-transform: lowercase !important;
+}
+
+/* Enhanced Skills Section Styling */
+.skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  background: rgba(0, 123, 255, 0.05);
+  border-color: rgba(0, 123, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+}
+
+.skill-tags .badge {
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tags .badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Color variations for different skill categories */
+.skill-tags .badge.bg-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+}
+
+.skill-tags .badge.bg-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34) !important;
+}
+
+.skill-tags .badge.bg-info {
+  background: linear-gradient(135deg, #17a2b8, #138496) !important;
+}
+
+.skill-tags .badge.bg-warning {
+  background: linear-gradient(135deg, #ffc107, #e0a800) !important;
+  color: #212529 !important;
+}
+
+.skill-tags .badge.bg-danger {
+  background: linear-gradient(135deg, #dc3545, #c82333) !important;
+}
+
+.skill-tags .badge.bg-secondary {
+  background: linear-gradient(135deg, #6c757d, #545b62) !important;
+}
+
+.skill-tags .badge.bg-dark {
+  background: linear-gradient(135deg, #343a40, #23272b) !important;
+}
+
+/* Skills section icons */
+#skills .subheading i {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skill-category {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-tags .badge {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
